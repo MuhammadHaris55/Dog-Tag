@@ -1,0 +1,66 @@
+[
+    {
+        "merged": "E:\\MAIN PROJECT\\ChatApp\\flutter_crud\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "E:\\MAIN PROJECT\\ChatApp\\flutter_crud\\android\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "E:\\MAIN PROJECT\\ChatApp\\flutter_crud\\build\\app\\intermediates\\res\\merged\\debug\\drawable_gradient_background.xml.flat",
+        "source": "E:\\MAIN PROJECT\\ChatApp\\flutter_crud\\android\\app\\src\\main\\res\\drawable\\gradient_background.xml"
+    },
+    {
+        "merged": "E:\\MAIN PROJECT\\ChatApp\\flutter_crud\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "E:\\MAIN PROJECT\\ChatApp\\flutter_crud\\android\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "E:\\MAIN PROJECT\\ChatApp\\flutter_crud\\build\\app\\intermediates\\res\\merged\\debug\\drawable-v21_launch_background.xml.flat",
+        "source": "E:\\MAIN PROJECT\\ChatApp\\flutter_crud\\android\\app\\src\\main\\res\\drawable-v21\\launch_background.xml"
+    },
+    {
+        "merged": "E:\\MAIN PROJECT\\ChatApp\\flutter_crud\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_logo.png.flat",
+        "source": "E:\\MAIN PROJECT\\ChatApp\\flutter_crud\\android\\app\\src\\main\\res\\mipmap-xxhdpi\\logo.png"
+    },
+    {
+        "merged": "E:\\MAIN PROJECT\\ChatApp\\flutter_crud\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_logo.png.flat",
+        "source": "E:\\MAIN PROJECT\\ChatApp\\flutter_crud\\android\\app\\src\\main\\res\\mipmap-xxxhdpi\\logo.png"
+    },
+    {
+        "merged": "E:\\MAIN PROJECT\\ChatApp\\flutter_crud\\build\\app\\intermediates\\res\\merged\\debug\\drawable_main_logo.png.flat",
+        "source": "E:\\MAIN PROJECT\\ChatApp\\flutter_crud\\android\\app\\src\\main\\res\\drawable\\main_logo.png"
+    },
+    {
+        "merged": "E:\\MAIN PROJECT\\ChatApp\\flutter_crud\\build\\app\\intermediates\\res\\merged\\debug\\drawable_logo.png.flat",
+        "source": "E:\\MAIN PROJECT\\ChatApp\\flutter_crud\\android\\app\\src\\main\\res\\drawable\\logo.png"
+    },
+    {
+        "merged": "E:\\MAIN PROJECT\\ChatApp\\flutter_crud\\build\\app\\intermediates\\res\\merged\\debug\\drawable-v21_logo.png.flat",
+        "source": "E:\\MAIN PROJECT\\ChatApp\\flutter_crud\\android\\app\\src\\main\\res\\drawable-v21\\logo.png"
+    },
+    {
+        "merged": "E:\\MAIN PROJECT\\ChatApp\\flutter_crud\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "E:\\MAIN PROJECT\\ChatApp\\flutter_crud\\android\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "E:\\MAIN PROJECT\\ChatApp\\flutter_crud\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "E:\\MAIN PROJECT\\ChatApp\\flutter_crud\\android\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "E:\\MAIN PROJECT\\ChatApp\\flutter_crud\\build\\app\\intermediates\\res\\merged\\debug\\drawable_launch_background.xml.flat",
+        "source": "E:\\MAIN PROJECT\\ChatApp\\flutter_crud\\android\\app\\src\\main\\res\\drawable\\launch_background.xml"
+    },
+    {
+        "merged": "E:\\MAIN PROJECT\\ChatApp\\flutter_crud\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_logo.png.flat",
+        "source": "E:\\MAIN PROJECT\\ChatApp\\flutter_crud\\android\\app\\src\\main\\res\\mipmap-xhdpi\\logo.png"
+    },
+    {
+        "merged": "E:\\MAIN PROJECT\\ChatApp\\flutter_crud\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-mdpi_logo.png.flat",
+        "source": "E:\\MAIN PROJECT\\ChatApp\\flutter_crud\\android\\app\\src\\main\\res\\mipmap-mdpi\\logo.png"
+    },
+    {
+        "merged": "E:\\MAIN PROJECT\\ChatApp\\flutter_crud\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "E:\\MAIN PROJECT\\ChatApp\\flutter_crud\\android\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "E:\\MAIN PROJECT\\ChatApp\\flutter_crud\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-hdpi_logo.png.flat",
+        "source": "E:\\MAIN PROJECT\\ChatApp\\flutter_crud\\android\\app\\src\\main\\res\\mipmap-hdpi\\logo.png"
+    }
+]
