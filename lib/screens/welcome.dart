@@ -66,7 +66,7 @@ class _WelcomeState extends State<Welcome> {
             ),
           ),
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.end,
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Container(
                 width: screen.width,
@@ -82,8 +82,6 @@ class _WelcomeState extends State<Welcome> {
                   ),
                 ),
               ),
-              Spacer(),
-
               Container(
                 // height: MediaQuery.of(context).size.height / 1.6,
                 height: MediaQuery.of(context).size.width * 1.05,

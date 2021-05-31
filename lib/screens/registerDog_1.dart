@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_crud/screens/home.dart';
 import 'package:flutter_crud/screens/registerDog_2.dart';
 import 'package:flutter_crud/stylingWidgets/button.dart';
-import 'package:flutter_crud/stylingWidgets/button_widget.dart';
 import 'package:flutter_crud/stylingWidgets/textField.dart';
 
-class registerDog1 extends StatefulWidget {
+class registerDog_1 extends StatefulWidget {
   @override
-  _registerDog1State createState() => _registerDog1State();
+  _registerDog_1State createState() => _registerDog_1State();
 }
 
 class NewObject {
@@ -16,16 +16,25 @@ class NewObject {
   NewObject(this.title, this.icon);
 }
 
-class _registerDog1State extends State<registerDog1> {
-  String _user = 'Hirer';
-  List _userlist = ['Hirer', 'Client'];
-
-  static final List<String> items = <String>[
-    'aple',
-    'abnsk',
+class _registerDog_1State extends State<registerDog_1> {
+  String _user = 'Labrador Retriever';
+  List _userlist = [
+    'Labrador Retriever',
+    'French Bulldog.',
+    'Doberman Pinschers',
+    ' German Shepherd',
+    'Golden Retriever.',
+    'Siberian Huskies',
+    ' Poodle',
   ];
-  String value = items.first;
 
+  // static final List<String> items = <String>[
+  //   'aple',
+  //   'abnsk',
+  // ];
+  // String value = items.first;
+
+  String value = 'Icons.circle';
   //FOR RADIO BUTTON
   static const values = <String>['Flutter', 'Dart', 'Firebase'];
   // String selectedValue = values.first;
@@ -33,8 +42,24 @@ class _registerDog1State extends State<registerDog1> {
   final selectedColor = Colors.green;
   final unselectedColor = Colors.white;
 
-  int selectedValue = 0;
+  //FOR IconButton
+  bool selected = false;
+  Icon first_icon = Icon(
+    Icons.circle,
+    semanticLabel: 'sajdgh',
+    color: Colors.themeColor,
+  );
+  Icon second_icon = Icon(
+    Icons.check_circle,
+    color: Colors.themeColor,
+  );
+
   //FOR RADIO BUTTON
+  String selectedValue = 'Boy';
+
+  //FOR DATA PASSING
+  TextEditingController textEditingController = TextEditingController();
+  String dogName;
 
   @override
   Widget build(BuildContext context) {
@@ -95,6 +120,11 @@ class _registerDog1State extends State<registerDog1> {
                   ),
                   SizedBox(height: 10.0),
                   R_textFormField('My dog name is...'),
+                  //SENDING DATA ON NEXT PAGE
+                  // TextField(
+                  //   decoration: InputDecoration(labelText: 'Dog Name'),
+                  //   onChanged: (val) => dogName = val,
+                  // ),
                   SizedBox(height: 20.0),
                   Text('Is Tom a boy or a girl?'),
                   SizedBox(height: 20.0),
@@ -128,7 +158,14 @@ class _registerDog1State extends State<registerDog1> {
                   ),
                   Row(
                     children: [
-                      IconButton(icon: Icon(Icons.circle), onPressed: () {}),
+                      IconButton(
+                        icon: selected ? second_icon : first_icon,
+                        onPressed: () {
+                          setState(() {
+                            selected = !selected;
+                          });
+                        },
+                      ),
                       Text('I don\'t know my dog breed'),
                     ],
                   ),
@@ -136,7 +173,26 @@ class _registerDog1State extends State<registerDog1> {
                   R_textFormField('My dog color'),
                   SizedBox(height: 20.0),
                   R_textFormField('Description'),
-                  SizedBox(height: 30.0),
+                  SizedBox(height: 20.0),
+                  Align(
+                    alignment: Alignment.bottomRight,
+                    child: Container(
+                      padding: EdgeInsets.only(right: 10.0),
+                      child: TextButton(
+                        onPressed: () {
+                          Navigator.push(context,
+                              MaterialPageRoute(builder: (context) => Home()));
+                        },
+                        child: Text(
+                          'SKIP',
+                          style: TextStyle(
+                            color: Colors.black,
+                            // fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
                   ElevatedButton(
                     style: buttonDesign,
                     child: button_design(screen, "NEXT"),
@@ -145,7 +201,10 @@ class _registerDog1State extends State<registerDog1> {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => registerDog_2()));
+                              builder: (context) => registerDog_2(
+                                    dog_Name: dogName,
+                                  )));
+                      // builder: (context) => registerDog_2(text: textEditingController.text)));
                     },
                   ),
                 ],
@@ -158,53 +217,53 @@ class _registerDog1State extends State<registerDog1> {
   }
 
   //FOR RADIO BUTTON ---------------- START ----------------------------
-  Widget buildRadios() => Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Transform.scale(
-              scale: 2,
-              child: Radio<int>(
-                value: 1,
-                groupValue: selectedValue,
-                onChanged: (value) => setState(() => selectedValue = 1),
-              ),
+  Widget buildRadios() => Row(
+        children: [
+          Flexible(
+            fit: FlexFit.loose,
+            child: RadioListTile<String>(
+              value: 'Boy',
+              activeColor: Colors.themeColor,
+              groupValue: selectedValue,
+              title: Text('Boy'),
+              onChanged: (value) => setState(() => selectedValue = value),
             ),
-            const SizedBox(height: 32),
-            ButtonWidget(
-              text: 'Select Radio',
-              onClicked: () => setState(() => selectedValue = 1),
+          ),
+          Flexible(
+            fit: FlexFit.tight,
+            child: RadioListTile<String>(
+              value: 'Girl',
+              activeColor: Colors.themeColor,
+              groupValue: selectedValue,
+              title: Text('Girl'),
+              onChanged: (value) => setState(() => selectedValue = value),
             ),
-            const SizedBox(height: 16),
-            ButtonWidget(
-              text: 'Unselect Radio',
-              onClicked: () => setState(() => selectedValue = 0),
-            ),
-          ],
-        ),
+          ),
+          // Spacer(),
+        ],
       );
   //FOR RADIO BUTTON ---------------- END ----------------------------
 
-  Widget buildDropdown() => DropdownButtonHideUnderline(
-        child: DropdownButton<String>(
-          value: value, // currently selected item
-          items: items
-              .map(
-                (item) => DropdownMenuItem<String>(
-                  child: Text(
-                    item,
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 20,
-                    ),
-                  ),
-                  value: item,
-                ),
-              )
-              .toList(),
-          onChanged: (value) => setState(() {
-            this.value = value;
-          }),
-        ),
-      );
+  // Widget buildDropdown() => DropdownButtonHideUnderline(
+  //       child: DropdownButton<String>(
+  //         value: value, // currently selected item
+  //         items: items
+  //             .map(
+  //               (item) => DropdownMenuItem<String>(
+  //                 child: Text(
+  //                   item,
+  //                   style: TextStyle(
+  //                     fontWeight: FontWeight.bold,
+  //                     fontSize: 20,
+  //                   ),
+  //                 ),
+  //                 value: item,
+  //               ),
+  //             )
+  //             .toList(),
+  //         onChanged: (value) => setState(() {
+  //           this.value = value;
+  //         }),
+  //       ),
+  //     );
 }

@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_crud/screens/home.dart';
+import 'package:flutter_crud/screens/registerDog_1.dart';
 import 'package:flutter_crud/stylingWidgets/button.dart';
 import 'package:flutter_crud/stylingWidgets/textField.dart';
 
@@ -64,27 +64,29 @@ class _RegisterState extends State<Register> {
                       R_textFormField('Address'),
                       SizedBox(height: 10),
                       R_textFormField('Zip Code'),
-                      SizedBox(height: 30),
-                      Row(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          IconButton(
-                            color: Colors.themeColor,
-                            icon: Icon(Icons.circle),
-                          ),
-                          Expanded(
-                            child: Text(
-                                "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna"),
-                          )
-                        ],
-                      ),
+                      // SizedBox(height: 30),
+                      // Row(
+                      //   crossAxisAlignment: CrossAxisAlignment.start,
+                      //   children: [
+                      //     IconButton(
+                      //       color: Colors.themeColor,
+                      //       icon: Icon(Icons.circle),
+                      //     ),
+                      //     Expanded(
+                      //       child: Text(
+                      //           "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna"),
+                      //     )
+                      //   ],
+                      // ),
                       SizedBox(height: 30),
                       ElevatedButton(
                         style: buttonDesign,
                         child: button_design(screen, "Register"),
                         onPressed: () {
-                          Navigator.push(context,
-                              MaterialPageRoute(builder: (context) => Home()));
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => registerDog_1()));
                         },
                       ),
                       SizedBox(height: 30),

@@ -2,7 +2,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_crud/screens/contactUs.dart';
 import 'package:flutter_crud/screens/dogInfo.dart';
-import 'package:flutter_crud/screens/greatJob.dart';
 import 'package:flutter_crud/screens/myProfile.dart';
 import 'package:flutter_crud/screens/registerDog_1.dart';
 
@@ -410,16 +409,16 @@ class _HomeState extends State<Home> {
                   child: drawerIconRow('My profile'),
                 ),
               ),
-              Container(
-                width: screen.width / 1.8,
-                child: TextButton(
-                  onPressed: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => GreatJob()));
-                  },
-                  child: drawerIconRow('My dog\'s'),
-                ),
-              ),
+              // Container(
+              //   width: screen.width / 1.8,
+              //   child: TextButton(
+              //     onPressed: () {
+              //       Navigator.push(context,
+              //           MaterialPageRoute(builder: (context) => GreatJob()));
+              //     },
+              //     child: drawerIconRow('My dog\'s'),
+              //   ),
+              // ),
               Divider(
                 thickness: 2.0,
                 color: Colors.black,
@@ -579,7 +578,7 @@ class _HomeState extends State<Home> {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => registerDog1()));
+                                    builder: (context) => registerDog_1()));
                           },
                           child: Text(
                             'ADD YOUR DOG ->',
@@ -756,7 +755,7 @@ class _HomeState extends State<Home> {
                               Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                      builder: (context) => registerDog1()));
+                                      builder: (context) => registerDog_1()));
                             },
                             child: Text(
                               'ADD REPORT     ->',
